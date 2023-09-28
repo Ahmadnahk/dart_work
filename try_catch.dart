@@ -1,3 +1,9 @@
+dynamic checkamount = (amount) {
+  if (amount > 0) {
+    throw new Error();
+  }
+};
+
 void main() {
   try {
     checkamount(10);
@@ -7,9 +13,3 @@ void main() {
     print("I am a final statment");
   }
 }
-
-dynamic checkamount = (amount) {
-  if (amount > 0) {
-    throw new TypeError();
-  }
-};
